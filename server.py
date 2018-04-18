@@ -20,7 +20,7 @@ def handle_user(usr):
 @socketio.on('dc-user')
 def handle_user_dc(usr):
     users.pop(usr)
-    emit('dcUsers', [usr, users],  broadcast=True)
+    emit('dcUsers', [usr, users],  broadcast=True) # some stuff
 
 
 @socketio.on('message')
